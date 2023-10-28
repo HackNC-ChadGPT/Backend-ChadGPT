@@ -1,0 +1,4 @@
+connector:
+  chatgpt:
+    api_key_var_name: CHATGPT_API_KEY
+    model: gpt-3.5-turbo
