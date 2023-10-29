@@ -5,8 +5,10 @@ import re
 import aiohttp
 import asyncio
 
-import sys # TODO: Do packages properly
-sys.path.append('../connectors/')
+import os
+import sys
+sys.path.append(os.path.dirname(__file__))
+
 from connectors.chatgpt_connector import ChatGPTConnector
 
 class JobBroker: 

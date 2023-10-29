@@ -1,13 +1,9 @@
-import sys # TODO: Do packages properly
-sys.path.append('../jobs/')
-sys.path.append('./')
-sys.path.append('../')
-print(sys.path)
-sys.path.append('C:/Users/Jing Wen/stuff/Backend-ChadGPT/ChadGPT/') # TODO: remove
-from jobs.job_broker import JobBroker
-
 import os
 import sys
+sys.path.append(os.path.dirname(__file__))
+
+from jobs.job_broker import JobBroker
+
 
 import yaml
 with open('config.yml', 'r') as f: #TODO: global ConfigLoader class maybe?
