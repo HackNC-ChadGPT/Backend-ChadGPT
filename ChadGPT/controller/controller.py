@@ -1,6 +1,8 @@
 import sys # TODO: Do packages properly
+sys.path.append('../jobs/')
 sys.path.append('./')
-
+sys.path.append('../')
+sys.path.append('C:/Users/Jing Wen/stuff/Backend-ChadGPT/ChadGPT/') # TODO: remove
 from jobs.job_broker import JobBroker
 
 import os
@@ -48,6 +50,6 @@ class MyController(Controller):
         agreements = self.get_agreement(answers)
         return sum(agreements)/len(agreements)
 
-a = MyController().run('What is the meaning of life?')
-print(a)
+result = MyController().run('What is the meaning of life?')
+print(result)
 '''
