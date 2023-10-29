@@ -2,3 +2,10 @@ connector:
   chatgpt:
     api_key_var_name: CHATGPT_API_KEY
     model: gpt-3.5-turbo
+
+broker:
+  max_concurrent_jobs: 8
+  exponential_backoff:
+    base: 2
+    max_wait: 10
+    max_retries: 5
