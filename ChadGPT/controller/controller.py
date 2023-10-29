@@ -2,6 +2,7 @@ import sys # TODO: Do packages properly
 sys.path.append('../jobs/')
 sys.path.append('./')
 sys.path.append('../')
+print(sys.path)
 sys.path.append('C:/Users/Jing Wen/stuff/Backend-ChadGPT/ChadGPT/') # TODO: remove
 from jobs.job_broker import JobBroker
 
